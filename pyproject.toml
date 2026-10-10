@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-script-analyst"
+version = "0.1.0"
+description = "Minimal screenplay analysis skill for linting and continuity QA"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "jsonschema>=4.23.0",
+  "openai>=1.54.0",
+]
+
+[project.scripts]
+analyze-script = "scripts.analyze_cli:main"
+
+[tool.setuptools]
+packages = ["src", "scripts"]
