@@ -1,6 +1,6 @@
 from openai import OpenAI
-from config import CONFIG
-from src.prompt_builder import build_prompt
+from .config import CONFIG
+from .prompt_builder import build_prompt
 
 def call_llm(script_text, title="Untitled Script", fmt="plain"):
     if not CONFIG.OPENAI_API_KEY:

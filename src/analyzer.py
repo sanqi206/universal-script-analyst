@@ -3,10 +3,10 @@ import re
 import uuid
 from datetime import datetime
 
-from config import CONFIG
-from src.schema_validator import validate_result
-from src.evidence_verifier import verify_evidence
-from src.llm_client import call_llm
+from .config import CONFIG
+from .schema_validator import validate_result
+from .evidence_verifier import verify_evidence
+from .llm_client import call_llm
 
 def normalize(text):
     return text.replace("\r\n", "\n")

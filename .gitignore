@@ -1,0 +1,20 @@
+# Git ignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.VENV/
+.env
+.env.*
+.pytest_cache/
+htmlcov/
+dist/
+build/
+coverage.xml
+*.egg-info/
+.DS_Store
+*.swp
+*.swo
